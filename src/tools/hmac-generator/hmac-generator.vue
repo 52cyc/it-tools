@@ -47,7 +47,7 @@ const { copy } = useCopy({ source: hmac });
 
 <template>
   <div flex flex-col gap-4>
-    <c-input-text v-model:value="plainText" multiline raw-text placeholder="Plain text to compute the hash..." rows="3" autosize autofocus label="Plain text to compute the hash" />
+    <c-input-text v-model:value="plainText" multiline raw-text placeholder="请输入..." rows="3" autosize autofocus label="用于计算哈希的纯文本" />
     <c-input-text v-model:value="secret" raw-text placeholder="Enter the secret key..." label="Secret key" clearable />
 
     <div flex gap-2>

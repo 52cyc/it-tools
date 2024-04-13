@@ -19,7 +19,7 @@ const [decryptOutput, decryptError] = computedCatch(() => algos[decryptAlgo.valu
 </script>
 
 <template>
-  <c-card title="Encrypt">
+  <c-card title="加密">
     <div flex gap-3>
       <c-input-text
         v-model:value="cypherInput"
@@ -46,7 +46,7 @@ const [decryptOutput, decryptError] = computedCatch(() => algos[decryptAlgo.valu
       multiline monospace readonly autosize mt-5
     />
   </c-card>
-  <c-card title="Decrypt">
+  <c-card title="解密">
     <div flex gap-3>
       <c-input-text
         v-model:value="decryptInput"
